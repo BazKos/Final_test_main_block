@@ -8,6 +8,7 @@ class Program
 {
     static void Main()
     {
+       // Изначальный массив на 4 элемента задается пользователем вручную.     
         int size1 = 4;
         string[] array1 = new string[size1];
         int j = 0;
@@ -20,12 +21,12 @@ class Program
         }
         Console.WriteLine("Ваш массив: ");
 
-        for(int i = 0; i < array1.Length; i++)
+        for(int i = 0; i < array1.Length; i++)              // Вывод массива на консоль.
         {
             Console.Write($"[{array1[i]}] ");
         }
-
-        int count = 0;
+        
+        int count = 0;                                      // Счетчик размера второго массива.
         foreach(string str in array1)
         {
             if(str.Length <= 3)
@@ -34,7 +35,7 @@ class Program
             }
         }
         
-        string[] array2 = new string[count];
+        string[] array2 = new string[count];                // Новый массив.
         int index = 0;
         foreach(string str in array1)
         {
@@ -47,7 +48,7 @@ class Program
 
         Console.WriteLine();
 
-        if(array2.Length == 0)
+        if(array2.Length == 0)                                             // Проверка на наличие элементов, не удовлетворяющих условию.
         {
             Console.WriteLine("Нет ни одного элемента до 3 символов!");
         }
@@ -61,6 +62,6 @@ class Program
             Console.WriteLine();
         }
         
-        Console.WriteLine("Спасибо! До свидания!");
+        Console.WriteLine("Спасибо! До свидания!");                     // Завершение.
     }
 }
