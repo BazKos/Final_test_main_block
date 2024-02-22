@@ -25,6 +25,26 @@ class Program
             Console.Write($"[{array1[i]}] ");
         }
 
+        int count = 0;
+        foreach(string str in array1)
+        {
+            if(str.Length <= 3)
+            {
+                count++;
+            }
+        }
+        
+        string[] array2 = new string[count];
+        int index = 0;
+        foreach(string str in array1)
+        {
+            if(str.Length <= 3)
+            {
+                array2[index] = str;
+                index++;
+            }
+        }
+
 
 
 
