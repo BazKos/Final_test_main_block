@@ -45,6 +45,8 @@ class Program
             }
         }
 
+        Console.WriteLine();
+
         if(array2.Length == 0)
         {
             Console.WriteLine("Нет ни одного элемента до 3 символов!");
@@ -58,9 +60,7 @@ class Program
             }
             Console.WriteLine();
         }
-
-
-
-
+        
+        Console.WriteLine("Спасибо! До свидания!");
     }
 }
