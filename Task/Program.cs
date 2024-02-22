@@ -45,6 +45,12 @@ class Program
             }
         }
 
+         Console.WriteLine("Массив с элементами 3 и меньше символов:"); // Вывод на консоль.
+        foreach(string str in array2)
+        {
+            Console.Write($"[{str}] ");
+        }
+
 
 
 
