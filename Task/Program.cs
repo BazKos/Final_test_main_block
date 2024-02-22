@@ -45,10 +45,18 @@ class Program
             }
         }
 
-         Console.WriteLine("Массив с элементами 3 и меньше символов:"); // Вывод на консоль.
-        foreach(string str in array2)
+        if(array2.Length == 0)
         {
-            Console.Write($"[{str}] ");
+            Console.WriteLine("Нет ни одного элемента до 3 символов!");
+        }
+        else
+        {
+            Console.WriteLine("Массив с элементами 3 и меньше символов:"); // Вывод на консоль.
+            foreach(string str in array2)
+            {
+                Console.Write($"[{str}] ");
+            }
+            Console.WriteLine();
         }
 
 
